@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subsea Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: beige;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 0px;
+            width: 100vw;
+            height: 100vh;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .square-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+            text-decoration: none;
+            color: #333;
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .square-button:hover {
+            transform: scale(1.05); /* Slight scale up on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow on hover */
+        }
+
+        .square-button .info {
+            font-size: 0.8em;
+            margin-top: 5px;
+            color: #666;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .square-button:nth-child(1) {
+            background-image: url("christmas.jpeg");
+        }
+
+        .square-button:nth-child(2) {
+            background-image: url("injection.jpg");
+        }
+
+        .square-button:nth-child(3) {
+            background-image: url("production.jpg");
+        }
+
+        .square-button:nth-child(4) {
+            background-image: url("manifold.png");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <a href="page1.html" class="square-button">
+            <div class="info">Christmas Tree</div>
+        </a>
+        <a href="page2.html" class="square-button">
+            <div class="info">Injection Well</div>
+        </a>
+        <a href="page3.html" class="square-button">
+            <div class="info">Production Well</div>
+        </a>
+        <a href="page4.html" class="square-button">
+            <div class="info">Manifold</div>
+        </a>
+    </div>
+</body>
+
+</html>
