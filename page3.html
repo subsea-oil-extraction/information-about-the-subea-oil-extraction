@@ -1,82 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Tree</title>
+    <title>Production Well</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
-            background-color: #f2ecec;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
-            background-image: url("myImage.jpg");
+            background-image: url('bg.avif'); /* Replace with your image path */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            color: #f0f0f0;
+            justify-content: center;
+            align-items: center;
         }
 
         .content-container {
-            flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 60px 40px;
             box-sizing: border-box;
-            position: relative; /* Keep relative positioning */
-            z-index: 1; /* Keep z-index: 1 */
-            margin-left: 5%; /* Add left margin */
-            margin-right: 5%; /* Add right margin */
+            position: relative;
+            z-index: 1;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 20px;
+            text-align: left;
+            margin-bottom: 80px;
+            background: rgba(0, 0, 0, 0.6);
         }
 
         h1 {
-            color: rgb(22, 21, 21);
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 2.8em;
+            font-weight: 600;
+            color: #bb86fc;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: -1px;
+            border-bottom: 2px solid #bb86fc;
+            padding-bottom: 10px;
+            width: 100%;
         }
 
         .side-btn-container {
             position: fixed;
-            top: 0;
-            height: 100vh;
-            width: 5%;
-            background: rgba(255, 255, 255, 0.2);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 80px;
+            background: rgba(39, 39, 39, 0.8);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 24px;
-            color: #0056b3;
+            font-size: 28px;
+            color: #bb86fc;
             z-index: 2;
         }
 
+        .side-btn-container:hover {
+            transform: translateY(-50%) scale(1.05);
+            box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.5), -7px -7px 14px rgba(0, 0, 0, 0.5);
+        }
+
         .side-btn-container.left {
-            left: 0;
+            left: 20px;
         }
 
         .side-btn-container.right {
-            right: 0;
+            right: 20px;
         }
 
-        .side-btn-container:hover {
-            background-color: rgba(0, 0, 0, 0.3);
-            color: white;
+        .content-container p,
+        .content-container ul {
+            width: 100%;
+            margin: 25px 0;
+            line-height: 1.8;
+            font-size: 1.15em;
+            color: #e0e0e0;
         }
 
+        .content-container ul {
+            padding-left: 35px;
+            list-style-type: disc;
+        }
+
+        .content-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-container strong {
+            color: #ff8a80;
+            font-weight: 600;
+        }
+
+        .content-container section {
+            margin-bottom: 40px;
+            width: 100%;
+        }
     </style>
 </head>
+
 <body>
     <div class="content-container">
         <h1>Production Well</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem porro aperiam consectetur cumque doloribus soluta dolores ad voluptatum atque reprehenderit? Nostrum soluta voluptatum, eos maiores iste optio quia vero esse facilis minima minus voluptatibus fugit, magnam error recusandae accusantium cum et. Minus accusantium, dolorem unde dicta ea veniam! Sapiente, mollitia repudiandae fugit distinctio, eveniet blanditiis magnam, minima aut atque assumenda dolores temporibus! Id accusamus provident consequatur aut veniam temporibus eveniet dolorem, quasi libero perspiciatis beatae. Tempore facere non totam quis commodi laudantium optio, nobis nesciunt exercitationem eaque error deleniti sit voluptate placeat ipsa, ex iure earum aliquam quas alias. Tempora!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, illum totam ipsum molestias, ducimus asperiores exercitationem sapiente, repellat tempora porro quasi! A fuga laudantium doloremque expedita ea mollitia fugit excepturi voluptas sunt provident culpa at repudiandae deleniti necessitatibus sequi, impedit omnis quis? Odio omnis maiores, reprehenderit neque beatae, id quibusdam eaque repellat numquam accusamus asperiores facilis consequuntur itaque earum dolores dolorum magni expedita assumenda. Dolore, consequuntur accusantium! Nobis quaerat, iste illo excepturi deserunt ullam doloremque adipisci impedit distinctio repellat nulla voluptatibus consequuntur qui sapiente cumque optio earum, voluptatem ipsa! Asperiores aperiam, recusandae architecto vitae maiores odit cum minima! Reiciendis, explicabo!.</p>
+        <section>
+            <p>
+                <strong>Introduction:</strong>
+                A production well is a critical component in the oil and gas industry, designed to extract hydrocarbons from underground reservoirs. These wells are carefully engineered to maximize production while ensuring safety and environmental protection.
+            </p>
+        </section>
+        <section>
+            <p>
+                <strong>Key Components and Functions:</strong>
+                Production wells consist of several key components that work together:
+            </p>
+            <ul>
+                <li><strong>Wellhead:</strong> The surface equipment that controls the flow of hydrocarbons.</li>
+                <li><strong>Production Tubing:</strong> The pipe through which hydrocarbons flow to the surface.</li>
+                <li><strong>Packers:</strong> Devices that isolate specific zones within the well.</li>
+                <li><strong>Subsurface Safety Valve (SSSV):</strong> A safety mechanism to prevent uncontrolled flow.</li>
+                <li><strong>Artificial Lift Systems:</strong> Techniques like pumps or gas lift to enhance production.</li>
+            </ul>
+        </section>
+        <section>
+            <p>
+                <strong>Types of Production Wells:</strong>
+                Production wells can be categorized based on their orientation and completion method:
+            </p>
+            <ul>
+                <li><strong>Vertical Wells:</strong> Drilled straight down to the reservoir.</li>
+                <li><strong>Horizontal Wells:</strong> Drilled horizontally through the reservoir to increase exposure.</li>
+                <li><strong>Deviated Wells:</strong> Drilled at an angle to reach specific reservoir targets.</li>
+            </ul>
+        </section>
     </div>
 
     <a href="page2.html" class="side-btn-container left">
@@ -87,4 +162,5 @@
         <i class="fas fa-chevron-right"></i>
     </a>
 </body>
+
 </html>
